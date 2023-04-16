@@ -14,9 +14,9 @@ AddEventHandler('onResourceStart', function(resourceName)
     end
 end)
 RegisterNetEvent('fleeca:main:timeout', function()
-    local object = GetClosestObjectOfType(vector3(145.42, -1041.81, 29.64), 100.0, `v_ilev_gb_teldr`, false, false,
+    local object = GetClosestObjectOfType(vector3(145.42, -1041.81, 29.64), 500.0, `v_ilev_gb_teldr`, false, false,
         false)
-    local object2 = GetClosestObjectOfType(vector3(146.92, -1046.11, 29.36), 100.0, `v_ilev_gb_vauldr`, false, false,
+    local object2 = GetClosestObjectOfType(vector3(146.92, -1046.11, 29.36), 500.0, `v_ilev_gb_vauldr`, false, false,
         false)
     QBCore.Functions.Notify('the doors will close after 15min so hurry up ', 'error', 7500)
     Wait(15 * 60 * 1000)
